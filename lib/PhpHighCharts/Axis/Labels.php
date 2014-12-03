@@ -17,6 +17,11 @@ class Labels extends Base
     protected $enabled;
 
     /**
+     * @var string
+     */
+    protected $format;
+
+    /**
      * @var int
      */
     protected $rotation;
