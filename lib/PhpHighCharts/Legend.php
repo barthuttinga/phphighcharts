@@ -25,6 +25,11 @@ class Legend extends Base
     protected $borderWidth;
 
     /**
+     * @var boolean
+     */
+    protected $floating;
+
+    /**
      * @var float
      */
     protected $borderRadius;
@@ -73,4 +78,19 @@ class Legend extends Base
      * @var string
      */
     protected $verticalAlign;
+
+    /**
+     * @var string
+     */
+    protected $align;
+
+    /**
+     * @var  integer
+     */
+    protected $x;
+
+    /**
+     * @var  integer
+     */
+    protected $y;
 }

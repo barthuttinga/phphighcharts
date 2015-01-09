@@ -98,4 +98,14 @@ class Axis extends Base
      * @var string
      */
     protected $type;
+
+    /**
+     * @var boolean
+     */
+    protected $startOnTick;
+
+    /**
+     * @var boolean
+     */
+    protected $endOnTick;
 }
