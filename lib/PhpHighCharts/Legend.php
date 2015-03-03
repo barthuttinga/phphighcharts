@@ -60,6 +60,10 @@ class Legend extends Base
     protected $padding;
 
     /**
+     * @var boolean
+     */
+    protected $reversed;
+    /**
      * @var float
      */
     protected $symbolHeight;
