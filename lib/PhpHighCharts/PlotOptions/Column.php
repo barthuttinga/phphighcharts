@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts\PlotOptions;
 
 use PhpHighCharts\Base;
@@ -6,7 +7,7 @@ use PhpHighCharts\Base;
 class Column extends Base
 {
     /**
-     * @var integer
+     * @var int
      */
     protected $depth;
 }

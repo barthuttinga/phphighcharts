@@ -1,15 +1,16 @@
 <?php
+
 namespace PhpHighCharts;
 
 class Tooltip extends Base
 {
     /**
-     * @var boolean
+     * @var bool
      */
     protected $enabled = false;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $shared;
 

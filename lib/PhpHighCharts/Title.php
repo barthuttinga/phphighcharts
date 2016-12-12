@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts;
 
 class Title extends Base
@@ -7,44 +8,44 @@ class Title extends Base
      * @var string
      */
     protected $align;
-    
+
     /**
-     * @var boolean
+     * @var bool
      */
     protected $floating;
-    
+
     /**
-     * @var integer
+     * @var int
      */
     protected $margin;
-    
+
     /**
      * @var CssObject
      */
     protected $style;
-    
+
     /**
      * @var string
      */
     protected $text;
-    
+
     /**
-     * @var boolean
+     * @var bool
      */
     protected $useHtml;
-    
+
     /**
      * @var string
      */
     protected $verticalAlign;
-    
+
     /**
-     * @var integer
+     * @var int
      */
     protected $x;
-    
+
     /**
-     * @var integer
+     * @var int
      */
     protected $y;
 }

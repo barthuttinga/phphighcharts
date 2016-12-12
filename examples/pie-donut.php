@@ -13,11 +13,11 @@ $highChart->getPlotOptions()->getPie()
     ->setCenter('50%', '50%');
 $highChart->getTooltip()->setValueSuffix('%');
 
-$data = array(1,2,3);
+$data = array(1, 2, 3);
 $series = new Series($data, 'Browsers');
 $highChart->addSeries($series);
 
-$data = array(4,5,6);
+$data = array(4, 5, 6);
 $series = new Series($data, 'Versions');
 $series->setSize('80%')->setInnerSize('60%');
 $highChart->addSeries($series);

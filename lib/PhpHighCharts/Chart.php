@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts;
 
 class Chart extends Base
@@ -24,7 +25,7 @@ class Chart extends Base
     protected $borderRadius;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $height;
 
@@ -59,7 +60,7 @@ class Chart extends Base
     protected $options3d;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $polar;
 
@@ -99,7 +100,7 @@ class Chart extends Base
     protected $type;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $width;
 }

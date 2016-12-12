@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts;
 
 abstract class Base
@@ -22,8 +23,9 @@ abstract class Base
     {
         $reflectionClass = new \ReflectionClass($this);
 
+        $matches = [];
         if (preg_match('/^(get|set|add|remove)(.*)$/', $method, $matches)) {
-            $methodType   = $matches[1];
+            $methodType = $matches[1];
             $propertyName = lcfirst($matches[2]);
         } else {
             throw new \InvalidArgumentException(
@@ -77,16 +79,15 @@ abstract class Base
             $reflectionClass->getProperty($propertyName)
         );
 
-        $nonObjectTypes = array('boolean', 'integer', 'float', 'double', 'string', 'array');
+        $nonObjectTypes = array('bool', 'int', 'float', 'double', 'string', 'array');
 
         switch ($methodType) {
-
             case 'get':
                 if (empty($this->$propertyName)
                     && $typeHint
                     && !in_array($typeHint, $nonObjectTypes)
                 ) {
-                    $this->$propertyName = new $typeHint;
+                    $this->$propertyName = new $typeHint();
                 }
 
                 return $this->$propertyName;
@@ -150,12 +151,12 @@ abstract class Base
                 if (!empty($propertyValue)) {
                     $properties = $propertyValue;
                     foreach ($properties as $propertyValue) {
-                        if ($propertyValue instanceof Base) {
+                        if ($propertyValue instanceof self) {
                             // fill empty series with 0 values
                             if ($propertyValue instanceof Series && empty($propertyValue->data)) {
-                                for ($i = 0; $i < $this->getMaxSeriesDataCount(); $i++) {
-                                        $propertyValue->data[] = 0;
-                                    }
+                                for ($i = 0; $i < $this->getMaxSeriesDataCount(); ++$i) {
+                                    $propertyValue->data[] = 0;
+                                }
                             }
                             $data[$propertyName][] = $propertyValue->getConfiguration();
                         } else {
@@ -174,9 +175,11 @@ abstract class Base
     private function getPropertyTypeHint(\ReflectionProperty $property)
     {
         $docComment = $property->getDocComment();
+        $matches = [];
         if (preg_match('/@var\s*([^\s]*)/', $docComment, $matches)) {
             $typeHint = $matches[1];
-               return $typeHint;
+
+            return $typeHint;
         }
 
         return false;
@@ -188,6 +191,6 @@ abstract class Base
             return $propertyName;
         }
 
-        return $propertyName . 's';
+        return $propertyName.'s';
     }
 }

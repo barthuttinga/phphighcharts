@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts;
 
 class Series extends Base
@@ -9,7 +10,7 @@ class Series extends Base
     protected $color;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $colorByPoint;
 
@@ -67,9 +68,8 @@ class Series extends Base
     {
         foreach ($data as &$value) {
             if ($value instanceof Series\Data) {
-                //
             } else {
-            $value = (double) $value;
+                $value = (float) $value;
             }
         }
         $this->data = $data;

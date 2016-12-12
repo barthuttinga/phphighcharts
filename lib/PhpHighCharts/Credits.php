@@ -1,10 +1,11 @@
 <?php
+
 namespace PhpHighCharts;
 
 class Credits extends Base
 {
     /**
-     * @var boolean
+     * @var bool
      */
     protected $enabled;
 

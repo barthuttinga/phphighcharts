@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts;
 
 class Style extends Base
@@ -14,7 +15,7 @@ class Style extends Base
     protected $fontFamily;
 
     /**
-     * @var double
+     * @var float
      */
     protected $fontSize;
 

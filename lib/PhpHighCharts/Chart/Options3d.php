@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts\Chart;
 
 use PhpHighCharts\Base;
@@ -6,27 +7,27 @@ use PhpHighCharts\Base;
 class Options3d extends Base
 {
     /**
-     * @var boolean
+     * @var bool
      */
     protected $enabled;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $alpha;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $beta;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $depth;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $viewDistance;
 }

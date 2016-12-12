@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts\PlotOptions;
 
 use PhpHighCharts\Base;
@@ -11,7 +12,7 @@ class Pie extends Base
     protected $center;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $shadow;
 

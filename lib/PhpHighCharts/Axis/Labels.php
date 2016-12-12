@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts\Axis;
 
 use PhpHighCharts\Base;
@@ -11,12 +12,12 @@ class Labels extends Base
     protected $align;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $enabled;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $rotation;
 
@@ -36,7 +37,7 @@ class Labels extends Base
     protected $style;
 
     /**
-     * @var integer
+     * @var int
      */
     protected $y;
 }

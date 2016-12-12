@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts;
 
 class XAxis extends Axis

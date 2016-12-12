@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts\Series;
 
 use PhpHighCharts\Base;

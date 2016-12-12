@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts;
 
 class Axis extends Base
@@ -49,7 +50,7 @@ class Axis extends Base
     protected $minRange;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $opposite;
 
@@ -64,7 +65,7 @@ class Axis extends Base
     protected $plotLines;
 
     /**
-     * @var boolean
+     * @var bool
      */
     protected $showLastLabel;
 

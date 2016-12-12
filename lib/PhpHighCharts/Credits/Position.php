@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts\Credits;
 
 use PhpHighCharts\Base;
@@ -14,12 +15,12 @@ class Position extends Base
      * @var float
      */
     protected $x;
-    
+
     /**
      * @var string
      */
     protected $verticalAlign;
-    
+
     /**
      * @var float
      */

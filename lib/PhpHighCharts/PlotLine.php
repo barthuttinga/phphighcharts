@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpHighCharts;
 
 class PlotLine extends Base
@@ -7,27 +8,27 @@ class PlotLine extends Base
      * @var string
      */
     protected $color;
-    
+
     /**
      * @var PhpHighCharts\PlotLine\Label
      */
     protected $label;
-    
+
     /**
      * @var float
      */
     protected $value;
-    
+
     /**
      * @var float
      */
     protected $width;
-    
+
     /**
-     * @var integer
+     * @var int
      */
     protected $zIndex;
-    
+
     public function __construct($value = null, $width = null, $color = null)
     {
         $this->setValue($value);

@@ -1,7 +1,6 @@
 <?php
-namespace PhpHighCharts;
 
-use HighCharts;
+namespace PhpHighCharts;
 
 class YAxis extends Axis
 {
