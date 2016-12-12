@@ -1,23 +1,26 @@
 {
-	"name" : "qaraqter/phphighcharts",
-	"type" : "library",
-	"description" : "PHP wrapper for HighCharts",
-	"keywords" : [
-		"highcharts",
-		"php"
-	],
-	"license" : "MIT",
-	"authors" : [{
-			"name" : "Bart Huttinga",
-			"email" : "bart@qaraqter.nl"
-		}
-	],
-	"autoload" : {
-		"psr-0" : {
-			"PhpHighCharts\\" : "lib/"
-		}
-	},
-	"require-dev": {
-		"phpunit/phpunit": "^5.7"
-	}
+    "name" : "qaraqter/phphighcharts",
+    "type" : "library",
+    "description" : "PHP wrapper for HighCharts",
+    "keywords" : [
+        "highcharts",
+        "php"
+    ],
+    "license" : "MIT",
+    "authors" : [{
+            "name" : "Bart Huttinga",
+            "email" : "bart@qaraqter.nl"
+        }
+    ],
+    "autoload" : {
+        "psr-0" : {
+            "PhpHighCharts\\" : "lib/"
+        }
+    },
+    "require" : {
+        "php" : ">=5.6"
+    },
+    "require-dev" : {
+        "phpunit/phpunit" : "^5.7"
+    }
 }
