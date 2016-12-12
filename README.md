@@ -8,37 +8,21 @@ PHP wrapper for creating HighCharts in an object oriented way.
 Authors
 -------
 
-* Bart Huttinga <barthuttinga@gmail.com>
+* Bart Huttinga
 
 Requirements
 ------------
 
-* [Highcharts](http://www.highcharts.com/)
+* [Composer](http://getcomposer.org/) for installing the library
+* [Highcharts](http://www.highcharts.com/) for rendering the charts
 
 Installation
 ------------
 
- 1. Add the library to composer.json:
+Install the library using Composer:
 
 ```
-// composer.json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/barthuttinga/phphighcharts"
-        }
-    ],
-    "require":{
-        "barthuttinga/phphighcharts": "dev-master"
-    }
-}
-```
-
- 2. Use Composer to download and install the library:
-
-```
-$ php composer.phar update barthuttinga/phphighcharts
+composer require barthuttinga/phphighcharts
 ```
 
 Usage
@@ -68,9 +52,9 @@ $chart->getYAxis()->addPlotLine(
     new PhpHighCharts\PlotLine(3, 1, 'green')
 );
 $chart->getCredits()
-	->setText('PHPHighCharts')
-	->setHref('https://github.com/barthuttinga/phphighcharts')
-	->getPosition()->setX(-100);
+    ->setText('PHPHighCharts')
+    ->setHref('https://github.com/barthuttinga/phphighcharts')
+    ->getPosition()->setX(-100);
 ```
 
 Then render it:

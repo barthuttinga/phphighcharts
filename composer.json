@@ -1,15 +1,14 @@
 {
-    "name" : "qaraqter/phphighcharts",
+    "name" : "barthuttinga/phphighcharts",
     "type" : "library",
-    "description" : "PHP wrapper for HighCharts",
+    "description" : "PHP wrapper for creating HighCharts in an object oriented way.",
     "keywords" : [
         "highcharts",
         "php"
     ],
     "license" : "MIT",
     "authors" : [{
-            "name" : "Bart Huttinga",
-            "email" : "bart@qaraqter.nl"
+            "name" : "Bart Huttinga"
         }
     ],
     "autoload" : {
