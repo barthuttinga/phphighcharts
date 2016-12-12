@@ -14,7 +14,7 @@ Requirements
 ------------
 
 * [Composer](http://getcomposer.org/) for installing the library
-* [Highcharts](http://www.highcharts.com/) for rendering the charts
+* [HighCharts](http://www.highcharts.com/) for rendering the charts
 
 Installation
 ------------
