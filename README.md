@@ -1,5 +1,7 @@
 PhpHighCharts
-==============
+=============
+
+[![Build Status](https://travis-ci.org/barthuttinga/phphighcharts.svg?branch=master)](https://travis-ci.org/barthuttinga/phphighcharts)
 
 PHP wrapper for creating HighCharts in an object oriented way.
 
